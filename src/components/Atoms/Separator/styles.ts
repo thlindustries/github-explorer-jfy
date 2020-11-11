@@ -11,16 +11,14 @@ export const Container = styled.div<ContainerProps>`
   margin-bottom: auto;
   margin-left: 20px;
 
-  ${(props) =>
-    props.type === 'vertical' &&
-    css`
+  ${(props) => props.type === 'vertical'
+    && css`
       width: 2px;
       height: 60%;
     `}
 
-  ${(props) =>
-    props.type === 'horizontal' &&
-    css`
+  ${(props) => props.type === 'horizontal'
+    && css`
       height: 1px;
       width: 100%;
       margin: 0;

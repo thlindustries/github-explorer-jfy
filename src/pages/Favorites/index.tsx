@@ -18,9 +18,9 @@ const Favorites: React.FC = () => {
 
   return (
     <Container>
-      {repos &&
-        repos.length > 0 &&
-        repos.map((repo) => (
+      {repos
+        && repos.length > 0
+        && repos.map((repo) => (
           <RepositoryCard
             key={repo.id}
             userRepo={repo}

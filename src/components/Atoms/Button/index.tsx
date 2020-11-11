@@ -12,12 +12,10 @@ const Button: React.FC<ButtonProps> = ({
   loading,
   enabled = true,
   ...rest
-}) => {
-  return (
-    <Container type="button" enabled={enabled} {...rest}>
-      {loading ? 'Carregando...' : children}
-    </Container>
-  );
-};
+}) => (
+  <Container type="button" enabled={enabled} {...rest}>
+    {loading ? 'Carregando...' : children}
+  </Container>
+);
 
 export default Button;

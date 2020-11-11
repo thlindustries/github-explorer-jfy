@@ -7,7 +7,9 @@ import Separator from 'components/Atoms/Separator';
 
 import jfyLogo from 'assets/images/jfylogomini.png';
 
-import { Container, LogoContent, Logo, UserContainer } from './styles';
+import {
+  Container, LogoContent, Logo, UserContainer,
+} from './styles';
 
 interface HeaderProps {
   changeTab(tab: string): void;

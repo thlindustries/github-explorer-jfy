@@ -12,4 +12,4 @@ export default interface RepositoryModel {
     avatar_url: string;
     login: string;
   };
-}
+};

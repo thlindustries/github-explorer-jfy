@@ -71,7 +71,11 @@ const Dashboard: React.FC = () => {
     <Container>
       <Heading>
         <h3>
-          Bem vindo ao <strong>Just For You</strong> Repository explorer :D
+          Bem vindo ao
+          {' '}
+          <strong>Just For You</strong>
+          {' '}
+          Repository explorer :D
         </h3>
       </Heading>
       <ContentWrapper>
@@ -89,8 +93,8 @@ const Dashboard: React.FC = () => {
           </FormContentWrapper>
         </Form>
         <Content>
-          {userRepos &&
-            userRepos.map((userRepo) => (
+          {userRepos
+            && userRepos.map((userRepo) => (
               <RepositoryCard key={userRepo.id} userRepo={userRepo} />
             ))}
         </Content>

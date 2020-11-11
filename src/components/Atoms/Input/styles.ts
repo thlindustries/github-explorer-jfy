@@ -27,23 +27,20 @@ export const Container = styled.div<ContainerProps>`
 
   transition: border 0.4s, box-shadow 0.4s;
 
-  ${(props) =>
-    props.hasError &&
-    css`
+  ${(props) => props.hasError
+    && css`
       border: 2px solid #c53030;
     `}
 
-  ${(props) =>
-    props.isFocused &&
-    css`
+  ${(props) => props.isFocused
+    && css`
       border: 2px solid #009c46;
       color: #009c46;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     `}
 
-  ${(props) =>
-    props.hasValue &&
-    css`
+  ${(props) => props.hasValue
+    && css`
       border: 2px solid #009c46;
       color: #009c46;
     `}

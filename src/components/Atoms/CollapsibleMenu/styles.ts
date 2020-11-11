@@ -71,9 +71,8 @@ export const MenuWrapper = styled.div<WrapperProps>`
     overflow: hidden;
     margin-top: -20px;
 
-    ${(props) =>
-      !props.isCollapsed &&
-      css`
+    ${(props) => !props.isCollapsed
+      && css`
         position: absolute;
 
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -89,9 +88,8 @@ export const MenuWrapper = styled.div<WrapperProps>`
           margin-bottom: 16px;
         }
       `}
-    ${(props) =>
-      props.isCollapsed &&
-      css`
+    ${(props) => props.isCollapsed
+      && css`
         position: absolute;
 
         width: auto;
@@ -136,9 +134,8 @@ export const Option = styled.p<OptionProps>`
   font-size: 16px;
   margin-right: 24px;
 
-  ${(props) =>
-    props.tabIsSelected &&
-    css`
+  ${(props) => props.tabIsSelected
+    && css`
       font-size: 18px;
       border-bottom: 1.4px solid #fff;
     `}

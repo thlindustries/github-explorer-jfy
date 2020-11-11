@@ -27,9 +27,8 @@ export const Container = styled.button<ContainerProps>`
     cursor: pointer;
   }
 
-  ${(props) =>
-    props.enabled === false &&
-    css`
+  ${(props) => props.enabled === false
+    && css`
       opacity: 0.4;
       pointer-events: none;
     `}

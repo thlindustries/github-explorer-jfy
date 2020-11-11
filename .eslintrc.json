@@ -6,11 +6,7 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "plugin:@typescript-eslint/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -27,8 +23,7 @@
   },
   "plugins": [
     "react",
-    "@typescript-eslint",
-    "prettier"
+    "@typescript-eslint"
   ],
   "rules": {
     "indent": [
@@ -63,7 +58,6 @@
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
     "camelcase": "off",
-    "prettier/prettier": "error",
     "react/self-closing-comp": "off",
     "react/jsx-filename-extension": [
       1,

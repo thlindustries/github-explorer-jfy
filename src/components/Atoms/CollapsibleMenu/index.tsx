@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Container, MenuWrapper, CollapsedMenu, Option } from './styles';
+import {
+  Container, MenuWrapper, CollapsedMenu, Option,
+} from './styles';
 
 interface CollapsibleMenuProps {
   handleChangeTab(key: string): void;
@@ -19,8 +21,8 @@ const CollapsibleMenu: React.FC<CollapsibleMenuProps> = ({
 }) => (
   <Container className="logo-options">
     <MenuWrapper isCollapsed={isCollapsed} onClick={handleCollapseMenu}>
-      {items &&
-        items.map((item) => (
+      {items
+        && items.map((item) => (
           <Option
             key={item.value}
             className="logo-option"

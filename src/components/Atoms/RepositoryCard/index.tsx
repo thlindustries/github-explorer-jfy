@@ -64,10 +64,13 @@ const RepositoryCard: React.FC<RepositoryCardProps> = ({
           <p>{userRepo.description}</p>
           <Footer>
             <p>
-              <FiStar size={16} color="#c9cc00" /> {userRepo.stargazers_count}
+              <FiStar size={16} color="#c9cc00" />
+              {' '}
+              {userRepo.stargazers_count}
             </p>
             <p>
-              <IoIosGitBranch size={16} color="#005eff" />{' '}
+              <IoIosGitBranch size={16} color="#005eff" />
+              {' '}
               {userRepo.forks_count}
             </p>
           </Footer>

@@ -30,7 +30,9 @@ const Input: React.FC<InputProps> = ({
   const [showPassword, setShowPassword] = useState(true);
 
   const inputReference = useRef<HTMLInputElement>(null);
-  const { fieldName, defaultValue, error, registerField } = useField(name);
+  const {
+    fieldName, defaultValue, error, registerField,
+  } = useField(name);
 
   const handleInputBlur = useCallback(() => {
     setFocus(false);
@@ -46,9 +48,9 @@ const Input: React.FC<InputProps> = ({
     (event) => {
       if (event.key === 'Enter') {
         if (inputReference.current !== undefined) {
-          callback &&
-            inputReference.current &&
-            callback(inputReference.current);
+          callback
+            && inputReference.current
+            && callback(inputReference.current);
         }
       }
     },
