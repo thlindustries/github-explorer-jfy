@@ -16,7 +16,6 @@ export const Container = styled.button<ContainerProps>`
   color: #fff;
   font-weight: 500;
 
-
   transition: background-color 0.2s;
 
   font-family: 'Raleway', sans-serif;
@@ -28,8 +27,9 @@ export const Container = styled.button<ContainerProps>`
     cursor: pointer;
   }
 
-  ${(props) => props.enabled === false
-    && css`
+  ${(props) =>
+    props.enabled === false &&
+    css`
       opacity: 0.4;
       pointer-events: none;
     `}

@@ -20,28 +20,30 @@ export const Container = styled.div<ContainerProps>`
   border: 2px solid #fff;
   color: #949494;
 
-
   & + div {
     margin-top: 8px;
   }
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
   transition: border 0.4s, box-shadow 0.4s;
 
-  ${(props) => props.hasError
-    && css`
+  ${(props) =>
+    props.hasError &&
+    css`
       border: 2px solid #c53030;
     `}
 
-  ${(props) => props.isFocused
-    && css`
+  ${(props) =>
+    props.isFocused &&
+    css`
       border: 2px solid #009c46;
       color: #009c46;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     `}
 
-  ${(props) => props.hasValue
-    && css`
+  ${(props) =>
+    props.hasValue &&
+    css`
       border: 2px solid #009c46;
       color: #009c46;
     `}
@@ -95,10 +97,9 @@ export const EyePassword = styled.div`
 
     transition: color 0.4s;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
       color: #ffa22b;
     }
-
   }
 `;
